@@ -1,4 +1,77 @@
-header{
-    
+body,
+p {
+    margin: 0;
+    font-family: Georgia, serif;
+    font-size: 16px;
+    line-height: 1.6;
+    background-color: #fff;
 }
 
+.Header {
+    background-color: #fff;
+    color: #000;
+    padding: 20px;
+    text-align: center;
+}
+
+.Header label {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+}
+
+.HeaderRow{
+    text-align: center;
+    white-space: nowrap;
+}
+
+.HeaderBox{
+    display: inline-block;
+    width: 33.33%;
+    vertical-align: top;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid #c0bfbf;
+}
+
+.HeaderTopLeft, .HeaderBottomLeft{
+    text-align: center;
+}
+
+.HeaderTopMid, .HeaderBottomMid{
+    text-align: center;
+    vertical-align: center;
+}
+
+.HeaderTopRight, .HeaderBottomRight{
+    text-align: center;
+}
+
+.LeftNavigation {
+    width: 10%;
+    float: left;
+    text-align: center;
+    background-color: #fff;
+    box-sizing: border-box;
+    min-height: 600px;
+    border: 1px solid #c0bfbf;
+}
+
+.RightNavigation {
+    width: 30%;
+    float: right;
+    background-color: #fff;
+    box-sizing: border-box;
+    min-height: 600px;
+    border: 1px solid #c0bfbf;
+}
+
+.MainContent {
+    width: 58%;
+    padding: 0 20px;
+    box-sizing: border-box;
+    margin-left: 180px;
+    margin-right: 180px;
+    background-color: #fff;
+    min-height: 600px;
+    border: 1px solid #c0bfbf;
+}
