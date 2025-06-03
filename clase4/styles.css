@@ -1,3 +1,4 @@
+/* Alineacion de Body */
 * {
   box-sizing: border-box;
 }
@@ -10,6 +11,8 @@ p {
     line-height: 1.6;
     background-color: #fff;
 }
+
+/* Estilo de Header */
 
 .Header {
     background-color: #fff;
@@ -55,6 +58,8 @@ p {
     text-align: center;
 }
 
+/* Estilo del Body */
+
 .MainBody {
   width: 100%;
   min-height: 300px;
@@ -81,7 +86,7 @@ p {
 }
 
 .MainContent {
-  margin: 0 33.5% 0 11.5%; /* margin-left and margin-right reserve space for side navs */
+  margin: 0 33.5% 0 11.5%; 
   background-color: #fff;
   min-height: 300px;
   border: 1px solid #c0bfbf;
@@ -92,3 +97,58 @@ p {
 .MainContent section{
     border: 1px solid #c0bfbf;
 }
+
+/* Estilo del Footer */ 
+
+.Footer{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #000;
+}
+
+.FooterImage{
+    background-color: #000;
+    text-align: center;
+}
+
+.FooterLeftColumn, .FooterRightColumn{
+    float: left;
+    box-sizing: border-box;
+}
+
+.FooterLeftColumn {
+  width: 50%;
+}
+
+.FooterRightColumn{
+    width: 50%;
+}
+
+.Horoscope,
+.SubscribeForm {
+  display: block;       
+  clear: both;
+  margin-left: 20px;          
+  padding: 10px;
+  background-color: #000;
+  color: #fff;
+}
+
+.Horoscope p{
+    background-color: #000;
+    color: #fff;
+}
+
+
+.Sections, .Explore{
+    float: right;
+    background-color: #000;
+    color: #fff;
+    margin-right: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
