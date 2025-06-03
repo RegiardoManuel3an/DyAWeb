@@ -49,9 +49,23 @@ p {
     text-align: center;
 }
 
+.HeaderTopLeft p{
+    color: #008000;
+    font-style: bold;
+}
+
+.HeaderTopRight p{
+    color: #008000;
+    font-style: bold;
+}
+
 .HeaderTopMid, .HeaderBottomMid{
     text-align: center;
     vertical-align: center;
+}
+
+.HeaderTopMid p{
+    color: #808080;
 }
 
 .HeaderTopRight, .HeaderBottomRight{
@@ -97,6 +111,69 @@ p {
 .MainContent section{
     border: 1px solid #c0bfbf;
 }
+
+article a{
+    color:#008000;
+    font-weight: bold;
+}
+
+.PhotoFooter{
+    color: #808080;
+    font-size: 14px;
+}
+
+.MainContent h1{
+    color:#000;
+    font-weight:bold;
+    font-size: 32px;
+}
+
+.NewsBody{
+    color: #000;
+    font-size: 20px;
+    line-height: 1.6;
+}
+
+.NextNewsPage{
+    border: 1px solid #c0bfbf;
+    border-radius: 1%;
+    box-sizing: border-box;
+}
+
+.NextNewsPage a{
+    color: #008000;
+    font-style: bold;
+    float: right;
+}
+
+.NextNewsLeft{
+    float: left;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+.NextNewsRight{
+    float: right;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+/* Estilo del Form */
+
+.Form{
+    width: 80%;
+    margin: 50px;
+    padding: 50px;
+    background-color: #fff;
+    border: 1px solid #c0bfbf;
+    border-radius: 1%;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+
 
 /* Estilo del Footer */ 
 
