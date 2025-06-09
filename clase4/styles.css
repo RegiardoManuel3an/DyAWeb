@@ -77,7 +77,7 @@ p {
 .MainBody {
   width: 100%;
   min-height: 300px;
-}
+  }
 
 .LeftNavigation {
   float: left;
@@ -100,7 +100,8 @@ p {
 }
 
 .MainContent {
-  margin: 0 33.5% 0 11.5%; 
+  margin: 0 33.5% 0 11.5%;
+  height: fit-content; 
   background-color: #fff;
   min-height: 300px;
   border: 1px solid #c0bfbf;
@@ -173,7 +174,22 @@ article a{
     box-sizing: border-box;
 }
 
+.Form img{
+    max-width: 50%;
+    max-height: 50%;
+    margin-left: 40%;
+    
+}
 
+.Form p{
+    text-align: center;
+    font-weight: bold;
+}
+
+.Form input{
+    text-align: center;
+    margin-left: 43%;
+}
 
 /* Estilo del Footer */ 
 
