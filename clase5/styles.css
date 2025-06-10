@@ -1,325 +1,265 @@
-/* Alineacion de Body */
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-body,
-p {
-    margin: 0;
-    font-family: Georgia, serif;
-    font-size: 16px;
-    line-height: 1.6;
-    background-color: #fff;
+html,
+body {
+  height: 100%;
+  font-family: Georgia, serif;
+  background-color: #fafafa;
+  color: #222;
 }
 
-/* Estilo de Header */
-
+/* — HEADER — */
 .Header {
-    background-color: #fff;
-    color: #000;
-    padding: 20px;
-    text-align: center;
-}
-
-.Header label {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: bold;
-}
-
-.HeaderRow{
-    text-align: center;
-    white-space: nowrap;
-}
-
-.HeaderBox{
-    display: inline-block;
-    width: 33.33%;
-    vertical-align: top;
-    box-sizing: border-box;
-    padding: 10px;
-    border: 1px solid #c0bfbf;
-}
-
-.HeaderBox img{
-    max-width: 100%;
-    height: auto;
-}
-
-.HeaderTopLeft, .HeaderBottomLeft{
-    text-align: center;
-}
-
-.HeaderTopLeft p{
-    color: #008000;
-    font-style: bold;
-}
-
-.HeaderTopRight p{
-    color: #008000;
-    font-style: bold;
-}
-
-.HeaderTopMid, .HeaderBottomMid{
-    text-align: center;
-    vertical-align: center;
-}
-
-.HeaderTopMid p{
-    color: #808080;
-}
-
-.HeaderTopRight, .HeaderBottomRight{
-    text-align: center;
-}
-
-/* Estilo del Body */
-
-.MainBody {
-  box-sizing: border-box;
   width: 100%;
-  min-height: 300px;
-  }
+  background: #ffffff;
+  margin: 1%;
+}
 
-.LeftNavigation {
+.HeaderRow {
+  width: 100%;
+  margin-bottom: 1px;
+  overflow: hidden;
+  /* clearfix */
+  background: #f2f2f2;
+}
+
+.HeaderBox {
   float: left;
-  width: 10em;
-  margin-left: 20px;
-  background-color: #eee;
+  width: 33%;
+  height: 100%;
+  margin-right: 0.33%;
+  text-align: center;
+  padding: 0 1em;
   border: 1px solid #c0bfbf;
-  box-sizing: border-box;
+}
+
+.HeaderBox img {
+  max-width: 100%;
+  height: 80%;
+}
+
+.HeaderBox p {
+  margin-top: 0.5em;
+  font-size: 0.9em;
+}
+
+/* — NAVIGATION — */
+nav label {
+  margin: 0 0.6em;
+  cursor: pointer;
+}
+
+/* — MAIN BODY — */
+.MainBody {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  overflow: hidden;
+  background: #ffffff;
+  padding: 2em 0;
+}
+
+.LeftNavigation,
+.MainContent,
+.RightNavigation {
+  float: left;
+  padding: 1em;
+  margin: 0.1%;
+  min-height: 300px;
+  border: 1px solid #c0bfbf;
+}
+
+.LeftNavigation,
+.RightNavigation {
+  width: 10%;
+  background: #f8f8f8;
 }
 
 .MainContent {
-  height: fit-content; 
-  background-color: #fff;
-  min-height: 300px;
-  border: 1px solid #c0bfbf;
-  box-sizing: border-box;
+  width: auto;
 }
 
 .RightNavigation {
-  float: right;
-  width: 10em;
-  background-color: #eee;
-  border: 1px solid #c0bfbf;
-  box-sizing: border-box;
+  width: 25%;
+  background: #f8f8f8;
 }
 
-
-.MainContent section{
-    border: 1px solid #c0bfbf;
+.LeftNavigation ul {
+  list-style: none;
+  padding: 0;
 }
 
-article a{
-    color:#008000;
-    font-weight: bold;
-}
-
-.PhotoFooter{
-    color: #808080;
-    font-size: 14px;
-}
-
-.MainContent h1{
-    color:#000;
-    font-weight:bold;
-    font-size: 32px;
-}
-
-.NewsBody{
-    color: #000;
-    font-size: 20rem;
-    line-height: 1.6;
-}
-
-.NextNewsPage{
-    border: 1px solid #c0bfbf;
-    border-radius: 1%;
-    box-sizing: border-box;
-}
-
-.NextNewsPage a{
-    color: #008000;
-    font-style: bold;
-    float: right;
-}
-
-.NextNewsLeft{
-    float: left;
-    width: 50%;
-    height: 100%;
-    box-sizing: border-box;
-}
-
-.NextNewsRight{
-    float: right;
-    width: 50%;
-    height: 100%;
-    box-sizing: border-box;
-}
-
-/* Estilo del Form */
-
-.Form{
-    width: 80%;
-    margin: 50px;
-    padding: 50px;
-    background-color: #fff;
-    border: 1px solid #c0bfbf;
-    border-radius: 1%;
-    text-align: left;
-    box-sizing: border-box;
-}
-
-.Form img{
-    max-width: 50%;
-    max-height: 50%;
-    margin-left: 40%;
-    
-}
-
-.Form p{
-    text-align: center;
-    font-weight: bold;
-}
-
-.Form input{
-    text-align: center;
-    margin-left: 43%;
-}
-
-/* Estilo del Footer */ 
-
-.Footer{
-    width: 100%;
-    min-height: 100vh;
-    background-color: #000;
-}
-
-.FooterImage{
-    background-color: #000;
-    text-align: center;
-}
-
-.FooterLeftColumn, .FooterRightColumn{
-    float: left;
-    box-sizing: border-box;
-}
-
-.FooterLeftColumn {
-  width: 50%;
-}
-
-.FooterRightColumn{
-    width: 50%;
-}
-
-.Horoscope,
-.SubscribeForm {
-  display: block;       
-  clear: both;
-  margin-left: 20px;          
-  padding: 10px;
-  background-color: #000;
-  color: #fff;
-}
-
-.Horoscope p{
-    background-color: #000;
-    color: #fff;
-}
-
-
-.Sections, .Explore{
-    float: right;
-    background-color: #000;
-    color: #fff;
-    margin-right: 20px;
-}
-
-ul {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-/* === Mobile First adjustments === */
-body {
-  font-size: 1rem; /* ~16px */
-}
-
-.NewsBody {
-  font-size: 1.25rem; /* ~20px */
-}
-
-.MainContent h1 {
-  font-size: 1.75rem; /* ~28px */
+.LeftNavigation li {
+  margin: 0.5em 0;
 }
 
 .MainContent {
-  width: 100em;
-  padding: 1em;
-  box-sizing: border-box;
+  width: 60%;
+  background: #ffffff;
 }
 
-/* === Media Query for larger screens === */
-@media (min-width: 600px) {
-  body {
-    font-size: 1.125rem; /* ~18px */
-  }
-
-  .NewsBody {
-    font-size: 1.375rem; /* ~22px */
-  }
-
-  .MainContent{
-    width: 100em;
-  }
-
-  .MainContent h1 {
-    font-size: 2.25rem; /* ~36px */
-  }
+.MainContent h1 {
+  font-size: 1.8em;
+  margin: 1em 0 0.5em;
 }
 
-@media (min-width: 768px) {
-  .Header{
-    width: 100em;
-    margin: 0 0.5em 0 0.5em
+.MainContent article a {
+  font-size: 0.9em;
+  color: #888;
+}
+
+.PhotoFooter {
+  font-size: 0.8em;
+  color: #555;
+  margin-bottom: 1em;
+}
+
+.NewsBody {
+  font-size: 1em;
+  line-height: 1.6em;
+  margin-top: 1em;
+}
+
+/* — NEXT PAGE — */
+.NextNewsPage {
+  overflow: hidden;
+  margin-top: 2em;
+  border-top: 1px solid #ccc;
+  padding-top: 1em;
+}
+
+.NextNewsLeft,
+.NextNewsRight {
+  float: left;
+  width: 50%;
+}
+
+.NextNewsLeft {
+  font-weight: bold;
+}
+
+.NextNewsRight {
+  text-align: right;
+}
+
+/* — FORM — */
+.Form {
+  clear: both;
+  width: 90%;
+  margin: 3em auto;
+  padding: 2em;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+.Form img {
+  display: block;
+  margin: 0 auto 1em;
+  max-width: 300px;
+}
+
+.Form p {
+  margin-bottom: 1em;
+}
+
+.Form input,
+.Form button {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+/* — FOOTER — */
+.Footer {
+  clear: both;
+  height: 60vh;
+  background: #111;
+  color: #fff;
+  padding: 2em 1em;
+}
+
+.Footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.FooterImage {
+  height: 20%;
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5em;
+}
+
+.FooterLeftColumn {
+  width: 40%;
+  float: left;
+  margin-bottom: 2em;
+}
+
+.FooterRightColumn {
+  float: right;
+  width: 30%;
+  margin-bottom: 2em;
+}
+
+.FooterRightColumn div {
+  margin-right: 10%;
+  float: left;
+}
+
+.Horoscope,
+.SubscribeForm,
+.Explore,
+.Sections {
+  margin-bottom: 1.5em;
+}
+
+.SubscribeForm input,
+.SubscribeForm button {
+  padding: 0.5em;
+  margin-top: 0.5em;
+  width: 100%;
+}
+
+/* — MEDIA QUERY (Responsive) — */
+@media screen and (max-width: 768px) {
+
+  .HeaderBox,
+  .LeftNavigation,
+  .MainContent,
+  .RightNavigation {
+    float: none;
+    width: 100%;
+    text-align: center;
   }
 
-  .HeaderTopLeft, .HeaderTopMid, .HeaderTopRight{
-    width: 33.33%;
-    height: 66.6%;
+  .LeftNavigation ul {
+    list-style: none;
+    padding: 0;
   }
 
-  .HeaderBottomLeft, .HeaderBottomMid, .HeaderBottomRight{
-    width: 33.33%;
-    height: 33.3%;
+  .LeftNavigation li {
+    margin: 0.5em 0;
+    
   }
 
-  .MainBody {
-    width: 100em;
-    padding: 0.3em;
+  .NextNewsLeft,
+  .NextNewsRight {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 1em;
   }
 
-  .MainContent {
-    float: left;
-    width: 50%;
+  .Form {
+    width: 95%;
   }
 
-  .LeftNavigation{
-    width: 10%;
-    float: left;
+  .FooterImage {
+    width: 80%;
+    height: 20%;
   }
-
-  .RightNavigation{
-    width: 10%;
-    float: left;
-  }
-
-  .Form{
-    width: 80em;
-    background-color: #fff;
-    border: 1px solid #c0bfbf;
-  }
-
 }
