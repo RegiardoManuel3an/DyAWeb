@@ -4,6 +4,7 @@
   padding: 0;
 }
 
+/* MOBILE FIRST */
 html,
 body {
   height: 100%;
@@ -23,7 +24,6 @@ body {
   width: 100%;
   margin-bottom: 1px;
   overflow: hidden;
-  /* clearfix */
   background: #f2f2f2;
 }
 
@@ -63,8 +63,8 @@ nav label {
 }
 
 .LeftNavigation,
-.MainContent,
-.RightNavigation {
+.RightNavigation,
+.MainContent {
   float: left;
   padding: 1em;
   margin: 0.1%;
@@ -109,6 +109,12 @@ nav label {
 .MainContent article a {
   font-size: 0.9em;
   color: #888;
+}
+
+.MainContent img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }
 
 .PhotoFooter {
@@ -224,26 +230,27 @@ nav label {
   width: 100%;
 }
 
-/* — MEDIA QUERY (Responsive) — */
-@media screen and (max-width: 768px) {
-
-  .HeaderBox,
-  .LeftNavigation,
-  .MainContent,
-  .RightNavigation {
-    float: none;
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .HeaderBox {
     width: 100%;
-    text-align: center;
+    float: left;
   }
 
-  .LeftNavigation ul {
-    list-style: none;
-    padding: 0;
+  .HeaderTopMid {
+    width: 100%;
+    float: left;
   }
 
-  .LeftNavigation li {
-    margin: 0.5em 0;
-    
+  .LeftNavigation,
+  .RightNavigation {
+    width: 20%;
+    float: left;
+  }
+
+  .MainContent {
+    width: 58%;
+    float: left;
   }
 
   .NextNewsLeft,
@@ -254,12 +261,55 @@ nav label {
     margin-bottom: 1em;
   }
 
-  .Form {
-    width: 95%;
+  .FooterLeftColumn,
+  .FooterRightColumn {
+    width: 100%;
+    float: none;
+    text-align: center;
   }
 
-  .FooterImage {
-    width: 80%;
-    height: 20%;
+  .FooterRightColumn div {
+    float: none;
+    margin-right: 0;
+  }
+  .Footer{
+    min-height: 60vh;
+    height: auto;
+  }
+  
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  .HeaderBox {
+    width: 33%;
+    float: left;
+  }
+
+  .LeftNavigation {
+    width: 10%;
+  }
+
+  .MainContent {
+    width: 60%;
+  }
+
+  .RightNavigation {
+    width: 25%;
+  }
+
+  .FooterLeftColumn {
+    width: 40%;
+    float: left;
+  }
+
+  .FooterRightColumn {
+    width: 30%;
+    float: right;
+  }
+
+  .FooterRightColumn div {
+    float: left;
+    margin-right: 10%;
   }
 }
