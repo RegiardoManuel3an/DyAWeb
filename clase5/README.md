@@ -7,7 +7,7 @@ el objetivo de desarrollar un videojuego web.
 
 Esta asignatura es la antesala para MDW (Metodologias de Desarrollo Web), con la que vamos a continuar en el segundo cuatrimestre utilizando frameworks.
 
-Esta rama "clase4" corresponde a la Clase 4 de la asignatura.
+Esta rama "clase5" corresponde a la Clase 5 de la asignatura.
 
 Los recursos utilizados para realizar la actividad fueron los siguientes:
 
