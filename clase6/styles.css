@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Georgia, serif;
+  background-color: #fafafa;
+  color: #222;
+}
+
+.Header {
+  width: 100%;
+  background: #ffffff;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.HeaderRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f2f2f2;
+}
+
+.HeaderBottomMid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  flex-shrink: 1;
+}
+
+.HeaderBox {
+  flex: 1;
+  text-align: center;
+  padding: 0 1em;
+  border: 1px solid #c0bfbf;
+}
+
+.HeaderBox img {
+  max-width: 100%;
+  height: 80%;
+}
+
+.HeaderBox p {
+  margin-top: 0.5em;
+  font-size: 0.9em;
+}
+
+nav label {
+  margin: 0 0.6em;
+  cursor: pointer;
+}
+
+.MainBody {
+  width: 100%;
+  margin: 0 1% 1% 1%;
+  background: #ffffff;
+  padding: 2em 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5%;
+  justify-content: space-between;
+}
+
+.LeftNavigation,
+.RightNavigation,
+.MainContent {
+  padding: 1em;
+  border: 1px solid #c0bfbf;
+  background: #f8f8f8;
+  min-height: 300px;
+}
+
+.LeftNavigation {
+  width: 10%;
+}
+
+.MainContent {
+  width: 60%;
+  background: #ffffff;
+}
+
+.RightNavigation {
+  width: 25%;
+}
+
+.LeftNavigation ul {
+  list-style: none;
+  padding: 0;
+}
+
+.LeftNavigation li {
+  margin: 0.5em 0;
+}
+
+.MainContent h1 {
+  font-size: 1.8em;
+  margin: 1em 0 0.5em;
+}
+
+.MainContent article a {
+  font-size: 0.9em;
+  color: #888;
+}
+
+.MainContent img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.PhotoFooter {
+  font-size: 0.8em;
+  color: #555;
+  margin-bottom: 1em;
+}
+
+.NewsBody {
+  font-size: 1em;
+  line-height: 1.6em;
+  margin-top: 1em;
+}
+
+.NextNewsPage {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+  border-top: 1px solid #ccc;
+  padding-top: 1em;
+}
+
+.NextNewsLeft {
+  font-weight: bold;
+}
+
+.NextNewsRight {
+  text-align: right;
+}
+
+.Form {
+  width: 90%;
+  margin: 3em auto;
+  padding: 2em;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+.Form img {
+  display: block;
+  margin: 0 auto 1em;
+  max-width: 300px;
+}
+
+.Form p {
+  margin-bottom: 1em;
+}
+
+.Form input,
+.Form button {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+.Footer {
+  background: #111;
+  color: #fff;
+  padding: 2em 1em;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: space-between;
+}
+
+.Footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.FooterImage {
+  width: 100%;
+  text-align: center;
+  margin-bottom: 5em;
+}
+
+.FooterLeftColumn,
+.FooterRightColumn {
+  flex: 1;
+  min-width: 300px;
+}
+
+.FooterRightColumn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.FooterRightColumn div {
+  flex: 1;
+  min-width: 120px;
+}
+
+.SubscribeForm input,
+.SubscribeForm button {
+  padding: 0.5em;
+  margin-top: 0.5em;
+  width: 100%;
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .HeaderRow,
+  .Footer,
+  .MainBody {
+    flex-direction: column;
+  }
+
+  .HeaderBox {
+    width: 100%;
+  }
+
+  .LeftNavigation,
+  .RightNavigation,
+  .MainContent {
+    width: 100%;
+  }
+
+  .NextNewsPage {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .FooterLeftColumn,
+  .FooterRightColumn {
+    width: 100%;
+  }
+
+  .FooterRightColumn {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .FooterRightColumn div {
+    width: 100%;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  .HeaderRow,
+  .MainBody,
+  .Footer {
+    flex-direction: row;
+  }
+
+  .HeaderBox {
+    flex: 1;
+  }
+
+  .LeftNavigation {
+    width: 10%;
+  }
+
+  .MainContent {
+    width: 60%;
+  }
+
+  .RightNavigation {
+    width: 25%;
+  }
+
+  .FooterLeftColumn {
+    flex: 1;
+  }
+
+  .FooterRightColumn {
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .FooterRightColumn div {
+    flex: 1;
+    min-width: 120px;
+  }
+}
