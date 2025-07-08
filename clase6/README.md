@@ -1,0 +1,16 @@
+# Readme
+
+Este proyecto fue creado en la primera clase de la asignatura "Desarrollo y Arquitecturas Web" de 4to Año ISI - UAI - 2025
+
+En la asignatura vamos a abarcar Git/Github, HTML, CSS y JavaScript, con 
+el objetivo de desarrollar un videojuego web.
+
+Esta asignatura es la antesala para MDW (Metodologias de Desarrollo Web), con la que vamos a continuar en el segundo cuatrimestre utilizando frameworks.
+
+Esta rama "clase6" corresponde a la Clase 6 de la asignatura.
+El archivo HTML trabajado es el llamado "noticia.html", no el index.html.
+Index.html fue creado al principio como una redireccion hacia la noticia, pero no fue trabajado a fondo.
+
+Los recursos utilizados para realizar la actividad fueron los siguientes:
+
+https://theonion.com/man-who-bumped-tesla-while-parallel-parking-sentenced-to-death/
