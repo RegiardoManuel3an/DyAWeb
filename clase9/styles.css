@@ -1,0 +1,521 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* DISENO */
+html,
+body {
+  height: 100%;
+  font-family: Georgia, serif;
+  background-color: #fafafa;
+  color: #222;
+}
+
+.Header {
+  background: #ffffff;
+}
+
+.HeaderRow {
+  background: #f2f2f2;
+}
+
+.HeaderBox{
+  border: 1px solid #c0bfbf;
+}
+
+.Header {
+  width: 100%;
+  margin: 1%;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.MainBody {
+  background: #ffffff;
+}
+
+.LeftNavigation,
+.RightNavigation,
+.MainContent {
+  width: 100%;
+  border: 1px solid #c0bfbf;
+  background: #f8f8f8;
+  min-height: 300px;
+  padding: 1em;
+}
+
+.MainContent {
+  background: #ffffff;
+}
+
+.MainContent h1 {
+  font-size: 1.8em;
+  margin: 1em 0 0.5em;
+}
+
+.MainContent article a {
+  font-size: 0.9em;
+  color: #888;
+}
+
+.MainContent img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.PhotoFooter {
+  font-size: 0.8em;
+  color: #555;
+  margin-bottom: 1em;
+  padding: 1em;
+}
+
+.NewsBody {
+  font-size: 1em;
+  line-height: 1.6em;
+  margin-top: 1em;
+}
+
+.NextNewsLeft {
+  font-weight: bold;
+}
+
+.NextNewsRight {
+  text-align: right;
+}
+
+.NextNewsPage {
+  border-top: 1px solid #ccc;
+}
+
+.Form {
+  width: 90%;
+  margin: 3em auto;
+  padding: 2em;
+  background: #f9f9f9;
+  border: 1px solid #ddd;
+}
+
+.Footer {
+  background: #111;
+  color: #fff;
+  padding: 2em 1em;
+}
+
+.Footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.FooterImage {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.FooterImage img{
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* LAYOUT */
+
+.HeaderRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.HeaderBottomMid {
+  display: flex;
+  justify-content: center;
+  flex-wrap: nowrap;
+  gap: 0.5em;
+  padding: 0.5em;
+}
+
+.HeaderBottomMid nav label{
+  flex: 0 1 auto;
+  font-size: 0.95em;
+  margin: 0.2em 0.5em;
+  white-space: nowrap;
+}
+
+.HeaderBox {
+  flex: 1 5;
+  text-align: center;
+  padding: 0 1em;
+}
+
+.HeaderBox img {
+  max-width: 100%;
+  height: 80%;
+}
+
+.HeaderBox p {
+  margin-top: 0.5em;
+  font-size: 0.9em;
+}
+
+nav label {
+  margin: 0 0.6em;
+  cursor: pointer;
+}
+
+.MainBody {
+  margin: 0 1% 1% 1%;
+  padding: 2em 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1em;
+}
+
+.MainContent, .SideColumn {
+  width: 100%;
+}
+
+.SideColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.LeftNavigation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  min-height: 0;
+  height: max-content;
+}
+
+.LeftNavigation ul {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+  padding: 0;
+  margin-top: 1em;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.LeftNavigation li {
+  margin: 0;
+}
+
+.RightNavigation {
+  display: flex;
+  flex-direction: row;
+  padding: 1em;
+  align-items: start;
+  gap: 1em;
+  min-height: 0;
+  max-height: fit-content;
+}
+
+.NextNewsPage {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2em;
+  padding-top: 1em;
+}
+
+.Form img {
+  display: block;
+  margin: 0 auto 1em;
+  max-width: 300px;
+}
+
+.Form p {
+  margin-bottom: 1em;
+}
+
+.Form input,
+.Form button {
+  width: 100%;
+  padding: 0.5em;
+  margin-bottom: 1em;
+}
+
+.Footer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+  justify-content: space-between;
+}
+
+.FooterLeftColumn,
+.FooterRightColumn {
+  flex: 1;
+  min-width: 300px;
+}
+
+.FooterRightColumn {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+.FooterRightColumn div {
+  flex: 1;
+  min-width: 120px;
+}
+
+.SubscribeForm input,
+.SubscribeForm button {
+  padding: 0.5em;
+  margin-top: 0.5em;
+  width: 100%;
+}
+
+.HamburgerMenu {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  flex-shrink: 1;
+  font-size: 1.5em;
+  cursor: pointer;
+  padding: 0.5em;
+}
+
+#MainNav {
+  display: none; 
+}
+
+@media (max-width: 767px) {
+  .HeaderRow,
+  .Footer {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .HeaderBox {
+    width: 100%;
+  }
+
+  .FooterLeftColumn,
+  .FooterRightColumn {
+    width: 100%;
+  }
+
+  .FooterRightColumn {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .FooterRightColumn div {
+    width: 100%;
+  }
+}
+
+/* TABLET */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .HeaderRow,
+  .Footer {
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .MainBody {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    gap: 1em;
+  }
+
+  .MainContent {
+    width: 60%;
+  }
+
+  .SideColumn {
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+  }
+
+  .LeftNavigation, .RightNavigation {
+    width: 100%;
+  }
+
+  .NextNewsLeft{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: start;
+  }
+
+  .NextNewsRight{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    justify-content: end;
+  }
+
+  .Form {
+    order: 3;
+  }
+
+  .HeaderBox {
+    width: 100%;
+  }
+
+  .FooterLeftColumn,
+  .FooterRightColumn {
+    width: 100%;
+  }
+
+  .FooterRightColumn {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .FooterRightColumn div {
+    width: 100%;
+  }
+
+  .LeftNavigation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .LeftNavigation ul {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    padding: 0;
+    margin-top: 1em;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .LeftNavigation li {
+    margin: 0;
+  }
+  
+  .HamburgerMenu {
+    display: none;
+  }
+
+  #MainNav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+  }
+}
+
+/* DESKTOP */
+@media screen and (min-width: 1024px) {
+  .HeaderRow,
+  .MainBody,
+  .Footer {
+    flex-direction: row;
+  }
+
+  .HeaderBottomMid {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-shrink: 1;
+    gap: 0.5em;
+  }
+
+  .HeaderBottomRight {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-shrink: 5;
+  }
+
+  .HeaderBottomLeft {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    flex-shrink: 5;
+  }
+
+  .MainBody {
+    flex-direction: row;
+    align-items: start;
+    gap: 1em;
+  }
+
+  .LeftNavigation {
+    width: 10%;
+    order: -1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .LeftNavigation ul {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    padding: 0;
+    margin-top: 1em;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .LeftNavigation li {
+    margin: 0;
+  }
+
+  .MainContent {
+    width: 60%;
+  }
+
+  .RightNavigation {
+    width: 25%;
+  }
+
+  .SideColumn {
+    display: contents;
+  }
+
+  .FooterImage {
+    flex-basis: 100%;
+    order: -1;
+    margin-bottom: 2em;
+  }
+  .FooterLeftColumn {
+    flex: 1;
+  }
+
+  .FooterRightColumn {
+    flex: 1;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .FooterRightColumn div {
+    flex: 1;
+    min-width: 120px;
+  }
+
+  .HamburgerMenu {
+    display: none;
+  }
+
+  #MainNav {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 0.5em;
+  }
+}
