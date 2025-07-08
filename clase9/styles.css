@@ -292,6 +292,23 @@ nav label {
   display: none; 
 }
 
+.FormFields {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.FieldGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.ButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 2em;
+}
+
 @media (max-width: 767px) {
   .HeaderRow,
   .Footer {
@@ -517,5 +534,19 @@ nav label {
     flex-wrap: nowrap;
     justify-content: center;
     gap: 0.5em;
+  }
+
+  .FormFields {
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 2%;
+  }
+
+  .FieldGroup {
+    width: 48%;
+  }
+
+  .ButtonContainer {
+    width: 100%;
   }
 }

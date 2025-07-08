@@ -61,28 +61,50 @@
         <div class="MainContent">
             <div class="Form">
                 <form>
-                    <fieldset name="Informacion del Usuario">
-                        <label for="NombreCompleto">Nombre Completo</label>
-                        <input type="text" name="NombreCompleto" placeholder="Nombre Completo" required>
-                        <label for="Email">Email</label>
-                        <input type="text" name="Email" placeholder="Direccion Email" required>
-                        <label for="Contraseña">Contraseña</label>
-                        <input type="password" name="Contraseña" placeholder="Contraseña" required>
-                        <label for="RepContraseña">Repetir Contraseña</label>
-                        <input type="password" name="RepContraseña" placeholder="Repetir Contraseña" required>
-                        <label for="Edad">Edad</label>
-                        <input type="number" name="Edad" placeholder="Tu Edad" min="0" max="120" required>
-                        <label for="Telefono">Telefono</label>
-                        <input type="number" name="Telefono" placeholder="Numero de Telefono" min="1000000000" max="9999999999" required>
-                        <label for="Direccion">Direccion</label>
-                        <input type="text" name="Direccion" placeholder="Tu Direccion" required>
-                        <label for="Ciudad">Ciudad</label>
-                        <input type="text" name="Ciudad" placeholder="Tu Ciudad" minlength="3" required>
-                        <label for="Codigo Postal">Codigo Postal</label>
-                        <input type="text" name="Codigo Postal" placeholder="Codigo Postal" minlength="3" required>
-                        <label for="DNI">DNI</label>
-                        <input type="number" name="DNI" placeholder="Tu DNI" min="1000000" max="99999999" required>
-                        <button type="submit" formaction="https://theonion.com/home" formmethod="post">Enviar</button>
+                    <fieldset name="Informacion del Usuario" class="FormFields">
+                        <div class="FieldGroup">
+                            <label for="NombreCompleto">Nombre Completo</label>
+                            <input type="text" name="NombreCompleto" placeholder="Nombre Completo" required>
+                        </div>
+                        <div class="FieldGroup">
+                            <label for="Email">Email</label>
+                            <input type="text" name="Email" placeholder="Direccion Email" required>
+                        </div>
+                        <div class="FieldGroup">
+                            <label for="Contraseña">Contraseña</label>
+                            <input type="password" name="Contraseña" placeholder="Contraseña" required>
+                        </div>
+                        <div class="FieldGroup">
+                            <label for="RepContraseña">Repetir Contraseña</label>
+                            <input type="password" name="RepContraseña" placeholder="Repetir Contraseña" required>
+                        </div>
+                        <div class="FieldGroup">
+                            <label for="Edad">Edad</label>
+                            <input type="number" name="Edad" placeholder="Tu Edad" min="0" max="120" required>
+                        </div>
+                        <div class="FieldGroup">
+                            <label for="Telefono">Telefono</label>
+                            <input type="number" name="Telefono" placeholder="Numero de Telefono" min="1000000000" max="9999999999" required>
+                        </div>
+                        <div class="FieldGroup">
+                            <label for="Direccion">Direccion</label>
+                            <input type="text" name="Direccion" placeholder="Tu Direccion" required>
+                        </div>
+                        <div class="FieldGroup">
+                            <label for="Ciudad">Ciudad</label>
+                            <input type="text" name="Ciudad" placeholder="Tu Ciudad" minlength="3" required>
+                        </div>
+                        <div class="FieldGroup">
+                            <label for="Codigo Postal">Codigo Postal</label>
+                            <input type="text" name="Codigo Postal" placeholder="Codigo Postal" minlength="3" required>
+                        </div>
+                        <div class="FieldGroup">
+                            <label for="DNI">DNI</label>
+                            <input type="number" name="DNI" placeholder="Tu DNI" min="1000000" max="99999999" required>
+                        </div>
+                        <div class="ButtonContainer">
+                            <button type="submit" formaction="https://theonion.com/home" formmethod="post">Enviar</button>
+                        </div>
                     </fieldset>
                 </form>
             </div>
