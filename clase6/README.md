@@ -7,7 +7,9 @@ el objetivo de desarrollar un videojuego web.
 
 Esta asignatura es la antesala para MDW (Metodologias de Desarrollo Web), con la que vamos a continuar en el segundo cuatrimestre utilizando frameworks.
 
-Esta rama "clase5" corresponde a la Clase 5 de la asignatura.
+Esta rama "clase6" corresponde a la Clase 6 de la asignatura.
+El archivo HTML trabajado es el llamado "noticia.html", no el index.html.
+Index.html fue creado al principio como una redireccion hacia la noticia, pero no fue trabajado a fondo.
 
 Los recursos utilizados para realizar la actividad fueron los siguientes:
 
