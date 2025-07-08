@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <script src="apilogic.js" defer></script>
+</head>
+<body>
+    <div class="Header">
+        <div class="HeaderBox">
+            <img id="HeaderLogo" src="https://www.vhv.rs/dpng/d/4-47533_rick-and-morty-logo-png-transparent-png.png"/>
+        </div>
+    </div>
+    <div class="MainBody">
+        <div class="MiddleColumn">
+            <div class="Filtros">
+                <label>Nombre: <input id="nombreFilter" type="text"/></label>
+                <label>Estado: 
+                    <select id="estadoFilter">
+                        <option value="">Cualquiera</option>
+                        <option value="alive">Vivo</option>
+                        <option value="dead">Muerto</option>
+                        <option value="unknown">Desconocido</option>
+                    </select>
+                </label>
+                <label>Genero:
+                    <select id="generoFilter">
+                        <option value="">Cualquiera</option>
+                        <option value="male">Hombre</option>
+                        <option value="female">Mujer</option>
+                        <option value="genderless">Sin Genero</option>
+                        <option value="unknown">Desconocido</option>
+                    </select>
+                </label>
+                <label>Especie: <input id="especieFilter" type="text"/></label>
+                <label>Tipo: <input id="tipoFilter" type="text"/></label>
+            </div>
+            <div class="Botones">
+                <button onclick="cargarTodos()">Todos los Personajes</button>
+                <button onclick="buscarPersonajes()">Filtrar Personajes</button>
+            </div>
+            <div class="Tabla">
+                <table id="tablaResults">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Estado</th>
+                            <th>Genero</th>
+                            <th>Especie</th>
+                            <th>Tipo</th>
+                            <th>Imagen</th>
+                        </tr>
+                    </thead>
+                    <tbody></tbody>
+                </table>
+            </div>
+        </div>
+        <div class="SideColumn">
+            <div class="LeftColumn">
+                <img src="https://i.imgur.com/XLjssWe.png"/>
+            </div>
+            <div class="RightColumn">
+                <img src="https://www.pngall.com/wp-content/uploads/15/Morty-PNG-Clipart.png"/>
+            </div>
+        </div>
+    </div>
+    <div class="Footer">
+        <div class="FooterRow">
+            <img id="FooterLogo" src="https://p.kindpng.com/picc/s/156-1567451_rick-and-morty-hd-png-download.png"/>
+        </div>
+    </div>
+</body>
+</html>
